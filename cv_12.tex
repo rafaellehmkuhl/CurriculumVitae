@@ -1,0 +1,374 @@
+%%%%%%%%%%%%%
+% Deedy CV/Resume
+% XeLaTeX Template
+% Version 1.0 (5/5/2014)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[A4]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+\usepackage[english]{babel}
+\usepackage{array}
+\newcolumntype{y}[1]{>{\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\renewcommand*{\arraystretch}{1.2}
+
+
+\usepackage{tikz}
+\newcommand\resume[2]{%
+  \ifnum#1>#2
+    $#1 > #2$
+  \else
+    \ifnum#1<0
+      $#1 < 0$
+    \else
+      \ifnum#2<0
+        $#2 < 0$
+      \else
+        \tikz{%
+        \ifx#20
+        \else
+          \foreach \i in {1,...,#2} {
+            \filldraw[black!20] (\i ex,0) circle (0.4ex);
+          };
+        \fi
+        \ifx#10
+        \else
+          \foreach \i in {1,...,#1} {
+            \filldraw[black] (\i ex,0) circle (0.4ex);
+          };
+        \fi
+        }
+      \fi
+    \fi
+  \fi
+}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\lastupdated % Print the Last Updated text at the top right
+
+\namesection{Rafael Araujo}{Lehmkuhl}{ % Your name
+\iffalse
+\urlstyle{same}\url{https://github.com/rafaellehmkuhl}  \urlstyle{same}\url{https://www.linkedin.com/in/rafael-lehmkuhl/}\\ % Your website, LinkedIn profile or other web address
+\fi
+\href{mailto:rafael.lehmkuhl93@gmail.com}{rafael.lehmkuhl93@gmail.com} |  +55 48 9-9133-9178 % Your contact information
+}
+
+
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.32\textwidth} % The left column takes up 33% of the text width of the page
+
+%------------------------------------------------
+% Education
+%------------------------------------------------
+
+\section{Education} 
+
+\subsection{UFSC}
+\descript{Universidade Federal de Santa Catarina}
+\descript{Degree in mechanical engineering}
+\location{2012 - 2019}
+\vspace*{0.2cm}
+\subsection{Sapienza}
+\descript{Sapienza Università di Roma}
+\descript{Exchange program}
+\descript{Master in Aeronautical engineering}
+\location{2015 - 2016}
+
+\vspace*{0.2cm}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Coursework
+%------------------------------------------------
+
+% \section{Coursework}
+
+% \subsection{Physics}
+%  Waves and Optics, Electromagnetism I and II, Intro to Quantum Mechanics I and II, Statistical Thermodynamics, Modern Physics, Classical Mechanics
+
+% \subsection{Mathematics}
+% Mathematics of Signal Processing, Linear Algebra I and II, Probability and Statistics I, Applied Math I and II, Complex Variables, Partial Differential Equations, Discrete Structures\\
+
+% \sectionspace % Some whitespace after the section
+
+\section{Strengths, skills}
+
+\location{Engineering fields}
+\begin{tabular}{y{55pt}y{65pt}}
+Fluid-Mechanics & \resume{8}{10} \\
+Software  & \resume{9}{10} \\
+Aeronautics & \resume{8}{10} \\
+Thermodynamics & \resume{7}{10} \\
+\end{tabular}\\
+
+\vspace*{0.2cm}
+
+\location{Programming languages}
+\begin{tabular}{y{55pt}y{65pt}}
+Python  & \resume{8}{10} \\
+Matlab & \resume{7}{10} \\
+C & \resume{7}{10} \\
+\end{tabular}\\
+
+\vspace*{0.2cm}
+
+\location{Frameworks/Libs}
+\begin{tabular}{y{55pt}y{65pt}}
+OpenCV &\resume{8}{10} \\
+Qt & \resume{6}{10} \\
+SUAVE & \resume{8}{10} \\
+Pandas & \resume{8}{10} \\
+\end{tabular}
+
+\vspace*{0.2cm}
+
+\location{CAD/CAE}
+\begin{tabular}{y{55pt}y{65pt}}
+Solidworks & \resume{8}{10} \\
+Fusion360 & \resume{7}{10} \\
+Eagle & \resume{6}{10} \\
+EES & \resume{6}{10} \\
+\end{tabular}
+
+\vspace*{0.2cm}
+
+\location{Others}
+\begin{tabular}{y{55pt}y{65pt}}
+GIT & \resume{6}{10} \\
+Linux & \resume{6}{10} \\
+Arduino & \resume{8}{10} \\
+RaspberryPi & \resume{7}{10} \\
+\LaTeX\ & \resume{6}{10} \\
+Jupyter & \resume{8}{10} \\
+\end{tabular}
+
+\vspace*{0.5cm}
+
+Scale:\\
+\scriptsize 
+1-Superficial knowledge.\\
+1-Minor modifications.\\
+2,4-Small projects.\\
+5,6-Complex projects.\\
+7,9-Deep knowledge of how it work.\\
+10-Comprehensive knowledge of the system.
+
+\sectionspace % Some whitespace after the section
+
+
+
+%\section{Awards}
+%Arthur Zamanakos Scholarship (excellence in Mathematics) \textbullet{} Ye-Yung Teng Memorial Scholarship (excellence in Physics) \textbullet{} Kennedy Family Merit Scholarship (June 2012, June 2013)
+
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the left column
+\hfill
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.67\textwidth} % The right column takes up 66% of the text width of the page
+
+
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+\section{Working Experience}
+
+
+\runsubsection{\href{https://embraer.com/}{Embraer}}
+\descript{\\ \textit{Systems Engineering Internship}}
+\location{March 2019 – Now}
+\location{Sao Jose dos Campos}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+ \item Modeling of thermal-management solutions for More-Electric Aircraft simulation. Implementation of models and optmization routines on Stanford/Embraer's SUAVE framework. (Python/SUAVE/MDAO)
+ \item Development of UAV solutions for fast implementation and test of novel aircraft control routines. (UAV)
+ \item Development of liquid-cooling system for an electric aircraft demonstrator.
+\end{tightitemize}
+\sectionspace % Some whitespace after the section
+
+\runsubsection{\href{http://horusaeronaves.com}{Horus Aeronaves}}
+\descript{\\ \textit{UAV Research \& Development}}
+\location{August 2016 – November 2017}
+\location{Florianopolis}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+ \item Development of RTK/PPK system for centimetric-precision orthophotography, enabling Horus UAVs to expand it's range of applications.
+ \item Development of electronic hardware for company's UAV image aquisition system. (Eagle)
+ \item Development of manufacturing solutions for reduction of about 40\% on UAV's assembly time. (Solidworks)
+\end{tightitemize}
+\sectionspace % Some whitespace after the section
+
+\runsubsection{Entrepreneurship}
+\descript{Service provider on Additive Manufacturing}
+\location{February 2017 - March 2019}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Service provider for CAD and fast prototyping of engineering projects based on additive manufacturing.
+\end{tightitemize}
+
+\section{University extension}
+
+\runsubsection{UFSC - Aerodesign Team}
+\descript{\\R\&D Projects Management}
+\location{April 2018 – March 2019}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+
+\item Leadership on two long-term projects aiming to support the development of new aircrafts for the team:
+\begin{tightitemize}
+
+\item Aicraft Design Resources: ADR is a MDAO library writen in Python for the conceptual development of aircrafts, focused on mantenability and extensability. ADR allows an aircraft design team to create it's own analysis (or use the default ones) to configure an aircraft and optmize it. The project is highly inspired on the SUAVE framework, by Stanford and Embraer. (Python/Aeronautics/Git)
+
+\item Bancada Mitica: an experimental test bench for the aerodynamic characterization of small aircrafts and it's components. The  test bench is installed on the rear of a pickup truck and the aircraft to be characterized is instaled over the bench, which is equiped with multi-hole Pitot tubes, load cells and accelerometers. When the car accelerates, the aircraft experience an air flowa and the sensors keep track of the aerodynamic forces generated by the aircraft. (Fluid-Mechanics/Python/Aeronautics)
+
+\end{tightitemize}
+
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+
+%------------------------------------------------
+% Research
+%------------------------------------------------
+
+\sectionspace % Some whitespace after the section
+
+\sectionspace
+
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+%	SECOND PAGE (EXAMPLE)
+%----------------------------------------------------------------------------------------
+
+\newpage % Start a new page
+
+\begin{minipage}[t]{0.32\textwidth} % The left column takes up 33% of the text width of the page
+\section{Fields of interest}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item UAV
+\item Artificial Intelligence
+\item Aerospace Engineering
+\item More Electric Aircraft
+\item MDAO
+\item Computer Vision
+\item Embedded Systems
+\item Rapid Prototyping
+\item Mobile Robots
+\item Cyber-Physical Systems
+\end{tightitemize}
+
+\vspace*{0.2cm}
+
+\section{Idioms}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Portuguese (Native)
+\item English (Advanced)
+\item Italian (Intermediate)
+\end{tightitemize}
+
+\vspace*{0.2cm}
+
+\section{GitHub}
+\href{https://github.com/rafaellehmkuhl}{github.com/rafaellehmkuhl}
+
+\vspace*{0.2cm}
+
+\section{LinkedIn}
+\href{https://www.linkedin.com/in/rafael-lehmkuhl/}{linkedin.com/in/rafael-lehmkuhl}
+
+
+\end{minipage} % The end of the left column
+\hfill
+\begin{minipage}[t]{0.67\textwidth} % The right column takes up 66% of the text width of the page
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\runsubsection{UFSC - Lecturer}
+\descript{Course - PCB Design with Eagle}
+\location{September 2018}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Development and lecture of a Printed Circuit Board (PCB) design course, focused on the Autodesk Eagle software and applied to engineering graduates. 
+\end{tightitemize}
+
+\runsubsection{UFSC - Aerodesign team}
+\descript{Captain and Project Manager}
+\location{March 2013 – December 2015}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Three happy years working in team Céu Azul Aeronaves, where I learned the practical meaning of team-work, cooperation, leadership and results, where I've made some of my biggest friends, and with whom I shared joy and sad moments. It was on Céu Azul where I've learned to love designing and where I learned the importance of using my failures as a strength to grow.\newline{}%
+
+\begin{tightitemize}
+\item Captain of Céu Azul Micro team in 2014, conquering the 5th position on the SAE Aerodesign competition.
+\item Project Manager of Céu Azul Advanced team in 2015, conquering the 3rd position on the SAE Aerodesign competition.
+\item Leadership of different teams of Data Acquisition, Telemetry, Aircraft Performance and Electrical Project, during the years
+\end{tightitemize}
+
+\end{tightitemize}
+
+\section{University research}
+
+\runsubsection{UFSC - Porous Medium and Thermophysical Properties Laboratory}
+\descript{Scientific initiation}
+\location{September 2013 – August 2014}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Research and development of heatflux transducers based on tangencial gradient.
+\end{tightitemize}
+
+\section{Projects}
+
+\runsubsection{Personal projects}
+\vspace{\topsep}
+\begin{tightitemize}
+\item OpenCV-Python-GUI: Graphical interface for easy testing of combinated OpenCV image processing filters.
+\item Aircraft Design Resources (ADR): Framework for aircraft conceptual design and optmization.
+\item Vivace: RaspberryPi-based data aquisition and telemetry system for UAVs.
+\item BancadaMitica: Experimental test bench for aerodynamic characterization of UAVs without a wind tunnel.
+\end{tightitemize}
+ 
+\sectionspace % Some whitespace after the section
+
+\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
